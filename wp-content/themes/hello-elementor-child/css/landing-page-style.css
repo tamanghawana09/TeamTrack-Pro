@@ -1,0 +1,303 @@
+@import "reset.css";
+@import "font.css";
+@import "color.css";
+
+body {
+  font-family: "Inter";
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 80px;
+}
+.nav-container > .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-container > .logo > img {
+  height: 70px;
+  width: auto;
+}
+.nav-container > .logo > h2{
+    color: #222;
+}
+.nav-container > nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-container > nav > ul,
+li {
+  list-style: none;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 80vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.hero-section > .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-section > .button > .find{
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.hero-section > .button > .login{
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.feature-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height:70vh;
+    background-color: var(--dull-white);
+}
+.feature-section > .heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.feature-section > .text{
+    max-width: 1200px;
+    padding: 0px 0px 50px 50px;
+    text-align: center;
+}
+.feature-section > .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.feature-section > .grid > .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.feature-section > .grid > .item > i{
+    font-size: 4rem;
+    padding:30px;
+    color: var(--primary-color);
+}
+.feature-section > .grid > .item > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.why-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height:80vh;
+  background-color: white;
+  padding: 50px;
+}
+.why-section > .heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.why-section > .text{
+    max-width: 1200px;
+    padding: 0px 0px 50px 50px;
+    text-align: center;
+}
+.why-section > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.why-section > .content > .left {
+    flex: 1;
+    padding-right: 20px;
+}
+.why-section > .content > .left > img {
+    width: 500px;
+}
+.why-section > .content > .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.why-section > .content > .right > .item > i{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.why-section > .content > .right > .item > span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.choice-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: var(--primary-color);
+    padding: 20px;
+    row-gap: 50px;
+}
+.choice-section > .heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.choice-section > button{
+    border-radius: 0 50px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    background-color: white;
+}
+.customer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height:70vh;
+    background-color: var(--secondary-color);
+}
+.customer-section > .heading{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.customer-section > .text{
+    max-width: 1200px;
+    padding: 0px 0px 50px 50px;
+    text-align: center;
+}
+.customer-section > .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.customer-section > .grid > .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.customer-section > .grid > .item > span{
+    font-size: 4rem;
+    padding:30px;
+    color: var(--primary-color);
+}
+.customer-section > .grid > .item > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    height: 70vh;
+    padding: 20px;
+}
+.contact-section > .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    max-width: 1200px;
+}
+.contact-section  > .content > .text > .title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.contact-section  > .content > .text > p{
+    color: var(--text-color);
+}
+.contact-section  > .content > .text > .location{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    column-gap: 20px;
+}
+.contact-section  > .content > .text > .mail{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    column-gap: 20px;
+}
+.contact-section  > .content > .text > .contact{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    column-gap: 20px;
+}
+.contact-section > .content> .links > .title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.contact-section > .content> .links > .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.contact-section > .content> .links > .grid > .left , .right > ul{
+    list-style: none;
+    color: var(--text-color);
+}
+.contact-section > .content> .subscribe> .title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.contact-section > .content> .subscribe> .form{
+    padding:  20px 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+.contact-section > .content> .subscribe> .form > .email{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+.contact-section > .content> .subscribe>.form > .email > input{
+    padding: 10px;
+}
+.contact-section > .content> .subscribe>.form > .email > i{
+    padding: 10px;
+    font-size: 20px;
+}
+footer{
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
